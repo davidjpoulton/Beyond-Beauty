@@ -1,0 +1,290 @@
+body {
+    background: linear-gradient(180deg, #FFFFFF 15.65%, rgba(255, 255, 255, 0) 20.69%), linear-gradient(360deg, #FFFFFF -3.56%, rgba(255, 255, 255, 0) 6.71%), linear-gradient(252.03deg, rgba(255, 237, 189, 0.59) 4.09%, rgba(255, 255, 255, 0) 108.2%), #FFA7B8;
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 160px;
+    font-size: 70px;
+    font-family: 'Berkshire Swash', cursive ;
+    color: #303030;
+    letter-spacing: 1px;
+}
+
+.seperator-top{
+    background-color: white;
+    height: 170px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.seperator-bottom{
+    background-color: white;
+    height: 250px;
+    width: 100%;
+    margin-top: 0;
+    border-top: 2px solid #FFA7B8;
+}
+
+.quote-text {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 40px;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    font-size: 18px;
+}
+
+#line {
+    margin-right: 25px;
+    margin-top: 10px;
+    width: 30px;
+    height: 2px;
+    background-color: #303030;
+    border-radius: 1px;
+}
+
+.quote-text-isla {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 27%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+/* CARDS */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 3% 8% 4%;
+}
+
+#icon {
+    width: 101px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+    width: 273px;
+    height: 410px;
+    background: #FFDEE4;
+    border: 1px solid #9E9E9E;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+/* PERSON -----------------CARD */
+.title {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.sub-text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #303030;
+    margin-bottom: 20px;
+}
+
+#isla-pic {
+    width: 220px;
+    height: 280px;
+}
+/* PERSON----------------- CARD */
+
+/* WHERE----------------- CARD */
+.where-title {
+    margin-top: 15px;
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+#nouveau-text{
+    font-weight: bold;
+}
+
+#nouveau-logo{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 275px;
+    margin-top: 50px;
+}
+/* WHERE----------------- CARD */
+
+/* REVIEWS----------------- CARD */
+.reviews {
+    width: 100%;
+    height: 323px;
+    background: #FFFFFF;
+    margin-top: 43px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.review-section {
+    top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+}
+
+.review-section img {
+    height: 50px;
+    width: 50px;
+}
+
+.review-name {
+    line-height: 50px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #303030;
+    margin-left: 5px;
+}
+
+.review-text {
+    font-weight: bold;
+    font-size: 13px;
+    color: #303030;
+    text-align: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* REVIEWS----------------- CARD */
+
+/* CONTACT----------------- CARD */
+.contact-title {
+    margin-top: 15px;
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.contact-bottom-text {
+    text-align: center;
+    width: 90%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #303030;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(225,152,166);
+    border: 1px solid #303030;
+    color: #303030;
+    font-weight: bold;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+}
+
+.number {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.number img {
+    width: 45px;
+    height: 45px;
+}
+
+.number h5 {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.email {
+    margin-top: 20px;
+    margin-left: 13px;
+    display: flex;
+    flex-direction: row;
+}
+
+.email img {
+    width: 50px;
+    height: 45px;
+}
+
+.email h5 {
+    margin-top: 10px;
+    margin-left: 18px;
+}
+/* CONTACT----------------- CARD */
+
+/* CARDS */
+
+#opening-hours {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.hours-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.hours-container h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.line-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.line  {
+    display: flex;
+    align-items: center;
+    height: 2px;
+    width: 40px;
+    background-color: black;
+    margin: 12px 50px 18px;
+    border-radius: 1px;
+}

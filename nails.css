@@ -1,0 +1,43 @@
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 4vw;
+}
+
+
+
+.main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+.section1 img {
+    height: 300px;
+    width: auto;
+}
+
+.section-text {
+    text-align: left;
+    margin: 0 50px 0 50px;
+}
+
+.section-text h2 {
+    font-size: 2vw;
+    color: rgb(218, 140, 156);
+}
+
+.section-text h4 {
+}
