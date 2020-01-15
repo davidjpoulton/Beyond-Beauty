@@ -178,6 +178,7 @@ p {
     align-items: center;
     background: rgb(255,167,184);
     text-align: center;
+    
 }
 
 #lvl-png {
@@ -336,6 +337,7 @@ p {
     flex-wrap: wrap;
     padding: 0 4px;
     margin: 0 100px 100px 100px;
+    animation-delay: 2s;
   }
   
   .column {
