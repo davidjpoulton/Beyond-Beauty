@@ -112,7 +112,7 @@ p {
 
 #show-nav {
     width: 350px;
-    height: 500px;
+    height: 520px;
     margin: 36px 0 0 -45px;
     list-style-type: none;
     position: absolute;
@@ -137,12 +137,13 @@ p {
     padding: 15px 0;
     padding-left: 43px;
     text-align: left;
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 0.5px;
     color: rgb(68, 68, 68);
     display: list-item;
-    font-weight: 700;
+    font-weight: bold;
     border-right: solid 3px transparent;
+    border-bottom: 1px solid rgb:;
 }
 
 #menuToggle input:checked ~ ul {
@@ -265,7 +266,6 @@ p {
 .red {
     color: red;
     margin-top: 0;
-    margin-bottom: 50px;
 }
 
 .pink {
@@ -480,7 +480,6 @@ p {
     justify-content: center;
     text-align: center;
     display: none;
-    margin-top: 20px;
 }
 
 .banner-home-mobile img {
@@ -516,12 +515,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 768px){  /*TABLET */
-
-    .button {
-        height: 30px;
-    }
-
+@media only screen and (max-width: 1024px){
     .icons {
         display: none;
     }
@@ -538,6 +532,9 @@ p {
     .logo {
         margin-left: 0;
     }
+}
+
+@media only screen and (max-width: 768px){  /*TABLET */
 
    #menuToggle {
         display: block;
@@ -607,6 +604,7 @@ p {
     }
 
     .banner-home-mobile img {
+        margin-bottom: 10px;
         display: block;
     }
     .home-banner {
@@ -629,10 +627,6 @@ p {
     .footer {
         display: none;
     }
-
-    .footer-middle {
-        display: none;
-    }
     
     .nav {
         height: 60px;
@@ -644,8 +638,12 @@ p {
 
     #show-nav {
         margin: 12px 0 0 -29px;
-        width: 300px;
-        height: 480px;
+        width: 90vw;;
+        height: 520px;
+    }
+    
+    #show-nav li {
+        padding-left: 30px;
     }
 
     .services-section {
@@ -693,6 +691,22 @@ p {
 
     .follow-us {
         display: none;
+    }
+
+    .nav {
+        background: linear-gradient(200.36deg, rgba(255, 237, 189, 0.336) 4.09%, rgba(255, 255, 255, 0) 90.2%), #FFA7B8;
+    }
+
+    .logo h1 {
+        color: black;
+    }
+
+    #menuToggle span {
+        background-color: black;
+    }
+
+    .footer-middle p {
+        font-size:3vw;
     }
 }
    

@@ -6,11 +6,6 @@
     margin-bottom: 70px;
 }
 
-.main-title img {
-    height: auto;
-    width: 75%;
-}
-
 .main-title h1 {
     font-size: 3vw;
 }
@@ -20,7 +15,7 @@
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 40px;
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: rgb(225,152,166);
 }
 
@@ -95,7 +90,7 @@
 }
 
 .lvl-pics img {
-    height: 500px;
+    height: 800px;
     width: auto;
 }
 /* section 1 */
@@ -165,12 +160,185 @@
 }
 /* section 4 */
 
+
+/* Mobile */
+
+.lvl-mobile-banner {
+    display: none;
+}
+
+.lvl-mobile-banner img {
+    width: 100%;
+}
+
+.lvl-mobile-button {
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 167, 184);
+    border: 1px solid rgb(73, 73, 73);
+    color: rgb(36, 36, 36);
+    width: 60%;
+    height: 50px;
+    font-size: 5.5vw;
+    display: none;
+}
+/* Mobile */
+
 /* Media Queries */ 
 
-@media only screen and (max-width: 425px) {
-    
+@media only screen and (max-width: 1024px) {  /* TABLET*/
+
+
+    .main-title {
+        margin-bottom: 20px;
+    }
+
+    .main-title h1 {
+        font-size: 4vw;
+    }
+
     .section-1 {
+        width: 70%;
+    }
+
+    .section1-text p {
+        font-size: 2vw;
+    }
+
+    .section1-text{
+        text-align: center;
+    }
+
+    #lvl-after {
+        display: none;
+    }
+
+    .beforeAfter h4 {
+        font-size: 3vw;
+    }
+
+    .section-2 {
         width: 100%;
+        margin: 0;
+    }
+
+    .section-2 img {
+        height: 230px;
+        width: auto;
+    }
+
+    .section-3 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-3 img {
+        height: 230px;
+        width: auto;
+    }
+
+    .section-4 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-text h1 {
+        font-size: 4vw;
+        margin: 0 20px 0;
+    }
+
+    .section-text p {
+        font-size: 2vw;
+    }
+
+    .seperator {
+        display: none;
+    }
+
+    .lvl-pics img{
+        height: 450px;
+        width: auto;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {  /* PHONE */
+
+    .lvl-mobile-banner {
+        display: block;
+    }
+
+    .section-1 {
+        margin: 40px 0 0 0;
+        width: 100%;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .main-title {
+        display: none;
+    }
+
+    .main-title h1 {
+        font-size: 24px;
+    }
+
+    .section1-text {
+        text-align: left;
+        margin: 0 10px 0;
+    }
+
+    .section1-text h1{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .section1-text p{
+        font-size: 14px;
+    }
+    .section1-text img{
+        height: 40px;
+        width: auto;
+    }
+ 
+    .beforeAfter h4{
+        font-size: 30px;
+    }
+
+    .lvl-pics {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .lvl-pics img {
+        height: auto;
+        width: 100%;
+    }
+
+    .section-2 {
+        display: none;
+    }
+    .section-3 {
+        display: none;
+    }
+    .section-4 {
+        display: none;
+    }
+
+    .services-section {
+        display: none;
+    }
+
+    .lvl-mobile-button {
+        display: block;
+    }
+
+    .beforeAfter h4 {
+        font-size: 7vw;
     }
 }
 /* Media Queries */ 
