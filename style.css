@@ -23,8 +23,7 @@ p {
 }
 
 #current-page {
-    color: crimson;
-    background-color: rgb(255, 208, 217);
+    border-bottom: 2px solid white;
 }
 
 #black-h1 {
@@ -71,6 +70,39 @@ p {
     width: 300px;
 }
 
+.logo {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    height: 140px;
+    width: auto;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+.mobile-logo img {
+    height: 50px;
+    width: 185px;
+}
+
+#logo-sub {
+    z-index: 100;
+    display: flex;
+    width: 200px;
+    position: absolute;
+    left: 42%;
+    top: 70%;
+    font-family: "Philosopher";
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 /* navbar */
 
 /* BURGER */
@@ -112,7 +144,7 @@ p {
 
 #show-nav {
     width: 350px;
-    height: 520px;
+    height: 532px;
     margin: 36px 0 0 -45px;
     list-style-type: none;
     position: absolute;
@@ -143,7 +175,7 @@ p {
     display: list-item;
     font-weight: bold;
     border-right: solid 3px transparent;
-    border-bottom: 1px solid rgb:;
+    border-bottom: 2px solid #d3d2d2;
 }
 
 #menuToggle input:checked ~ ul {
@@ -174,33 +206,37 @@ p {
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 120px;
+    justify-content: center;
+    height: 170px;
     align-items: center;
     background: rgb(255,167,184);
     text-align: center;
-    
+    border-bottom: 2px solid rgb(78, 78, 78);
+}
+
+#offer-banner {
+    height: 35px;
+    background-color: rgb(255, 208, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Philosopher";
+    font-size: 15px;
 }
 
 #lvl-png {
     height: 100px;
     width: auto;
-    margin-left: 10px;
-}
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-left: 90px;
-    font-family: 'viva';
-    position: relative;
+    position: absolute;
+    left: 0%;
 }
 
 .icons {
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    margin-right: 40px;
+    flex-direction: column;
+    left: 92%;
+    top: 50px;
 }
 
 .fab {
@@ -233,34 +269,51 @@ p {
     z-index: 2;
 }
 
-.links {
+.links-left {
+    position: absolute;
+    left: -100%;
+    top: 70%;
     z-index: 10;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(255, 208, 217);
     height: 40px;
-    border-bottom: 1px solid rgb(73, 73, 73);
+    width: 450px;
 }
 
-.links a {
+.links-right {
+    position: absolute;
+    left: 94%;
+    top: 70%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 450px;
+}
+
+.nav-links a {
+    font-weight: bold;
     display: flex;
     color: rgb(73, 73, 73);
     font-size: 16px;
     letter-spacing: 1px;
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
     height: 100%;
     align-items: center;
     text-transform: uppercase;
+    border-bottom: 2px solid transparent;
 }
 
-.links a:hover {
+.nav-links a:hover {
     font-weight: bold;
-    background-color: rgb(252, 220, 226);
+    border-bottom: 2px solid white;
 }
 
 .red {
@@ -473,7 +526,6 @@ p {
 /* Footer */
 
 /* Mobile */
-
 .banner-home-mobile {
     display: flex;
     flex-direction: column;
@@ -515,8 +567,17 @@ p {
     }
 }
 
-@media only screen and (max-width: 1024px){
-    .icons {
+@media only screen and (max-width: 1024px){ /* small laptop */
+
+    .logo img {
+        height: 87px;
+    }
+    
+    #logo-sub { 
+        font-size: 1.3vw;
+    }
+
+    #offer-banner {
         display: none;
     }
 
@@ -532,17 +593,26 @@ p {
     .logo {
         margin-left: 0;
     }
-}
 
-@media only screen and (max-width: 768px){  /*TABLET */
+    .links-left {
+        display: none;
+    }
 
-   #menuToggle {
+    .links-right {
+        display: none;
+    }
+
+    #menuToggle {
         display: block;
         position: absolute;
         margin: 0;
         left: 2%;
         top: 34px;
     }
+}
+
+@media only screen and (max-width: 768px){  /*TABLET */
+
 
    .nav {
         border-bottom: 1px solid black;
@@ -599,6 +669,14 @@ p {
 
 @media only screen and (max-width: 425px) { /*MOBILE*/
 
+    .mobile-logo {
+        display: block;
+    }
+
+    .logo  {
+        display: none;
+    }
+
     .banner-home-mobile {
         display: block;
     }
@@ -639,7 +717,7 @@ p {
     #show-nav {
         margin: 12px 0 0 -29px;
         width: 90vw;;
-        height: 520px;
+        height: 532px;
     }
     
     #show-nav li {
