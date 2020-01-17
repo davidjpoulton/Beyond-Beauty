@@ -86,7 +86,7 @@
 .lvl-pics {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto 60px;
 }
 
 .lvl-pics img {
@@ -284,7 +284,7 @@
     }
 
     .main-title h1 {
-        font-size: 24px;
+        font-size: 8vw;
     }
 
     .section1-text {
@@ -294,7 +294,7 @@
 
     .section1-text h1{
         text-align: center;
-        font-size: 24px;
+        font-size: 8vw;
     }
 
     .section1-text p{
@@ -306,6 +306,7 @@
     }
  
     .beforeAfter h4{
+        margin: 30px auto;
         font-size: 30px;
     }
 
@@ -318,14 +319,32 @@
         width: 50%;
     }
 
-    .section-2 {
+    .section-2 img{
         display: none;
     }
-    .section-3 {
+    .section-3 img{
+        display: none;    }
+    .section-4 img {
         display: none;
     }
     .section-4 {
+        margin-bottom: 20px;
+    }
+
+    #lvl-button {
         display: none;
+    }
+    .section-text h1 {
+        margin-bottom: 20px;
+        font-size: 6vw;
+    }
+    .section-text {
+        margin: 10px 0 10px 0;
+        width: 100%;
+    }
+    .section-text p {
+        margin: 0 10px;
+        font-size: 3.5vw;
     }
 
     .services-section {
@@ -334,10 +353,18 @@
 
     .lvl-mobile-button {
         display: block;
+        margin: 30px auto;
     }
 
     .beforeAfter h4 {
         font-size: 7vw;
+    }
+
+    #faq {
+        display: block;
+        text-align: center;
+        border-top: 1px solid #000;
+        padding-top: 30px;
     }
 }
 /* Media Queries */ 
