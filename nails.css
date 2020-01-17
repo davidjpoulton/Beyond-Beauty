@@ -7,11 +7,22 @@
     font-size: 4vw;
 }
 
-
+#nails-button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 167, 184);
+    border: 1px solid rgb(73, 73, 73);
+    color: rgb(36, 36, 36);
+    width: 45%;
+    height: 50px;
+    font-size: 1.2vw;
+}
 
 .main {
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .section1 {
@@ -39,5 +50,65 @@
     color: rgb(218, 140, 156);
 }
 
-.section-text h4 {
+
+@media only screen and (max-width:768px) {
+
+    .section1 img {
+        width: auto;
+        height: 180px;
+    }
+
+    .main {
+        width: 95%;
+    }
+
+    .section-text {
+        margin-right: 10px;
+    }
+    .section-text h2 {
+        font-size: 3vw;
+    }
+
+    .section-text p {
+        font-size: 1.7vw;
+    }
+
+    #nails-button {
+        font-size: 16px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .banner {
+        display: none;
+    }
+
+    .section1 {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .section1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .section-text {
+        text-align: center;
+        margin: 0 10px;
+    }
+    .section-text h2 {
+        font-size: 8vw;
+    }
+
+    .section-text p {
+        font-size: 3vw;
+    }
+
+    
 }
