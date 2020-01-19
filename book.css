@@ -128,7 +128,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 888px) {
     .form-box{
         top: 200px;
         height: 600px;
@@ -137,6 +137,16 @@
     .input-message {
         height: 100px;
     
+    }
+
+    #ask-text {
+        display: block;
+        position: absolute;
+        font-size: 3vw;
+        top: -64px;
+        text-align: center;
+        left: 7%;
+        width: 87%;
     }
 }
 
