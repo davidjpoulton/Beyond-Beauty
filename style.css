@@ -569,14 +569,6 @@ p {
         margin-left: 0;
     }
 
-    .links-left {
-        display: none;
-    }
-
-    .links-right {
-        display: none;
-    }
-
     #menuToggle {
         display: block;
         position: absolute;
@@ -588,17 +580,17 @@ p {
     .icons {
         display: none;
     }
+
+    .links {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 768px){  /*TABLET */
+@media only screen and (max-width: 888px){  /*TABLET */
 
 
    .nav {
         border-bottom: 1px solid black;
-    }
-
-    .links {
-        display: none;
     }
 
     .home-banner {
@@ -643,6 +635,10 @@ p {
     .logo h1 {
         font-size: 60px;
     }
+
+    .button {
+        height: 30px;
+    }
 }
 
 
@@ -667,7 +663,6 @@ p {
     .home-banner {
         display: none;
     }
-
 
     .logo h1 {
         font-size: 9.5vw;
