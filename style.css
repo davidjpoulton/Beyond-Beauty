@@ -99,7 +99,7 @@ p {
     top: 70%;
     font-family: "Philosopher";
     font-size: 18px;
-    color: black;
+    color: rgb(66, 66, 66);
     font-weight: bold;
     text-transform: uppercase;
 }
