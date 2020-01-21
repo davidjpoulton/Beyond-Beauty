@@ -398,6 +398,8 @@
         border-top: 1px solid #000;
         padding-top: 30px;
         margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 7vw;
     }
 
     #seperator {
