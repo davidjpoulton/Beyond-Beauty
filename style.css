@@ -156,6 +156,7 @@ p {
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     padding-left: 0;
     z-index: 99;
+    
 }
 
 #show-nav a li:hover {
@@ -227,10 +228,13 @@ p {
     font-size: 20px;
     padding: 0 30px;
     letter-spacing: 1px;
+    transition-property: color;
+    transition-duration: 1s;
 }
 
 .links a:hover {
     font-weight: bold;
+    color: red
 }
 
 #offer-banner {
