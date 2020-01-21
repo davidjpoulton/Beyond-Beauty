@@ -173,6 +173,12 @@
 
 #faq {
     font-size: 3.5vw;
+    margin-top: 40px;
+}
+
+#seperator {
+    width: 27%;
+    margin: 40px auto 15px;
 }
 
 /* Mobile */
@@ -288,6 +294,10 @@
 
 @media only screen and (max-width: 426px) {  /* PHONE */
 
+    #underline {
+        display: none;
+    }
+
     .lvl-mobile-banner {
         display: block;
     }
@@ -388,6 +398,12 @@
         text-align: center;
         border-top: 1px solid #000;
         padding-top: 30px;
+        margin-top: 0;
+    }
+
+    #seperator {
+        width: 70%;
+        margin: 10px auto;
     }
 }
 /* Media Queries */ 
