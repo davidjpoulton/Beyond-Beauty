@@ -22,11 +22,8 @@ body {
     justify-content: center;
     line-height: 40px;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
     font-size: 1.7vw;
-
+    margin: 30px auto 20px ;
 }
 
 #line {
@@ -336,6 +333,7 @@ body {
     .box {
         width: 100%;
         box-shadow: none;
+        border: none;
     }
 
     .cards-container {
