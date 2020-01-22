@@ -148,8 +148,8 @@ p {
     margin: 36px 0 0 -45px;
     list-style-type: none;
     position: absolute;
-    border: 1px solid #d1d1d1;
-    background: rgb(255, 238, 239);
+    border: 1px solid #ffb1b1;
+    background: rgb(255, 187, 191);
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
@@ -167,16 +167,15 @@ p {
 }
 
 #show-nav li {
+    font-weight: bold;
     padding: 15px 0;
     padding-left: 43px;
     text-align: left;
     font-size: 18px;
     letter-spacing: 0.5px;
-    color: rgb(68, 68, 68);
+    color: rgb(0, 0, 0);
     display: list-item;
-    font-weight: bold;
     border-right: solid 3px transparent;
-    border-bottom: 2px solid #ffffff;
 }
 
 #menuToggle input:checked ~ ul {
@@ -693,7 +692,7 @@ p {
 
     #show-nav {
         margin: 12px 0 0 -29px;
-        width: 90vw;;
+        width: 80vw;;
         height: 532px;
     }
     
