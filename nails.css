@@ -50,6 +50,26 @@
     color: rgb(218, 140, 156);
 }
 
+.nails-mobile-banner {
+    display: none;
+    margin-bottom: 30px;
+}
+
+.nails-mobile-banner img {
+    width: 100%;
+}
+
+.mobile-text {
+    margin: 0 15px 10px 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobile-text p{
+    display: none;
+}
+
 
 @media only screen and (max-width:888px) {
 
@@ -80,6 +100,16 @@
 }
 
 @media only screen and (max-width:425px){
+
+    .mobile-text p {
+        display: block;
+        font-size: 5.5vw;
+    }
+
+    .nails-mobile-banner {
+        display: block;
+    }
+
     .banner {
         display: none;
     }
@@ -107,7 +137,7 @@
     }
 
     .section-text p {
-        font-size: 3vw;
+        font-size: 3.2vw;
     }
 
     
