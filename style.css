@@ -311,6 +311,14 @@ p {
 .pink {
     color: rgb(225,152,166);
 }
+
+#pink-flower {
+    position: absolute;
+    height: 200px;
+    width: auto;
+    right: 0%;
+    top: 30px;
+}
 /* navbar */
 
 /* Banner */  
@@ -606,6 +614,11 @@ p {
     .links {
         display: none;
     }
+
+    #pink-flower {
+        top: 0px;
+        height: 100px;
+    }
 }
 
 @media only screen and (max-width: 888px){  /*TABLET */
@@ -666,6 +679,10 @@ p {
 
 @media only screen and (max-width: 425px) { /*MOBILE*/
 
+    #pink-flower {
+        height: 60px;
+    }
+
     .mobile-logo {
         display: block;
     }
@@ -682,6 +699,7 @@ p {
         margin-bottom: 10px;
         display: block;
     }
+
     .home-banner {
         display: none;
     }
