@@ -268,8 +268,8 @@ p {
     position: absolute;
     display: flex;
     flex-direction: row;
-    left: 80%;
-    top: 85px;
+    right: 2%;
+    top: 90px;
 
 }
 
