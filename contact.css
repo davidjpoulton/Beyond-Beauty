@@ -1,0 +1,219 @@
+body {
+    background: linear-gradient(8.37deg, rgba(255, 237, 189, 0.38) 17.44%, rgba(255, 255, 255, 0) 111.96%), #FFA7B8;
+}
+
+h2 {
+    color: black;
+    font-size: 2em;
+}
+
+h3 {
+    color: black;
+}
+.main-content {
+    margin: 40px 70px 60px 70px;
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    color: black;
+    margin-bottom: 70px;
+}
+
+#white {
+    color: white;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+#phone-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#phone-png {
+    height: 150px;
+    width: auto;
+    margin-right: 10%;
+}
+
+#email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#email-png {
+    height: 150px;
+    width: auto;
+    margin-right: 10%;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 520px;
+    height: 630px;
+    background: rgb(255, 240, 240);
+    border: 2px solid #C9C9C9;
+    box-sizing: border-box;
+    z-index: 0;
+    margin-left: 60px;
+}
+
+.main-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.main-title h1{
+    font-size: 48px;
+    line-height: 40px;
+    color: #303030;
+    margin-top: 10px;
+}
+
+.form-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.form-text {
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #303030;
+}
+
+.input-bar {
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgb(199, 199, 199);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.input-message {
+    height: 150px;
+    background: #FFFFFF;
+    border: 1px solid #D5D5D5;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    background: #FFA7B8;
+    border: 1px solid rgb(151, 151, 151);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .main-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 888px) {
+
+    #contact-h1 {
+        margin-bottom: 40px;
+    }
+    
+    .form-box{
+        height: 600px;
+        min-width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .input-message {
+        height: 100px;
+    }
+
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    
+    #contact-h1 {
+        text-align: center;
+    }
+
+    .main-content {
+        margin: 40px 15px 60px 15px;
+    }
+
+    #phone-png {
+        height: 60px;
+        width: auto;
+    }
+
+    #email-png {
+        height: 60px;
+        width: auto;
+    }
+
+    #email {
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .form-box{
+        min-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .input-message {
+        height: 100px;
+    }
+
+    .form-content-container {
+        width:95%;
+    }
+
+    .main-title h1{
+        font-size: 10vw;
+    }
+}

@@ -14,7 +14,8 @@ body {
 }
 
 p {
-    font-size: 1.1vw;
+    color: black;
+    font-size: 1em;
 } 
 
 @font-face {
@@ -87,7 +88,7 @@ p {
 }
 
 .logo img {
-    height: 160px;
+    height: 125px;
     width: auto;
 }
 
@@ -216,7 +217,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 170px;
+    height: 145px;
     align-items: center;
     background: #ffa7b8;
     text-align: center;
@@ -238,12 +239,13 @@ p {
     padding: 0 30px;
     letter-spacing: 1px;
     transition-property: color;
-    transition-duration: 1s;
+    transition-duration: .6s;
 }
 
 .links a:hover {
     font-weight: bold;
-    color: red
+    color: white;
+    background-color: #FFA7B8;
 }
 
 #offer-banner {
@@ -257,11 +259,46 @@ p {
     color: #FFA7B8;
 }
 
-#lvl-png {
-    height: 100px;
-    width: auto;
+#contact-us-button {
+    position: relative;
+    background-image: url("imgs/pink-water.png");
+    background-size: 6em;
+    background-repeat: no-repeat;
+    background-position-x: 4em;
+    background-position-y: 1em;
+    background-color: rgb(255, 204, 214);
+    border: 2px solid #ad7979;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    width: 115px;
+    height: 70px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 10px 3px#ffb1b1;
+}
+
+#contact-us-button:hover {
+    box-shadow: inset 0 0 5px 7px #FFA7B8;
+    background-color: rgb(252, 212, 212);
+    color: black;
+    background-size: 8em;
+    background-position-x: 3em;
+    background-position-y: -1em;
+    letter-spacing: 2px;
+    width: 230px;
+    height: 70px;
+    font-size: 20px;
+}
+
+#contact-header {
     position: absolute;
-    left: 0%;
+    left: 3%;
+    top: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
 }
 
 .icons {
@@ -269,12 +306,20 @@ p {
     display: flex;
     flex-direction: row;
     right: 2%;
-    top: 90px;
+    top: 48px;
+    border-left: 2px solid white;
+    padding-left: 10px;
+    border-radius: 1px;
+    color: black;
+}
 
+
+.icons i:hover {
+    color: white;
 }
 
 .fab {
-    color: rgb(0, 0, 0);
+    color: black;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -347,12 +392,6 @@ p {
     height: auto;
 }
 
-.home-banner-isla {
-    font-size: 1.4vw;
-    position: absolute;
-    top: 72%;
-    left: 25%;
-}
 
 .home-banner-button {
     display: flex;
@@ -362,10 +401,10 @@ p {
     align-items: center;
     justify-content: center;
     color: rgb(36, 36, 36);
-    width: 17%;
-    top: 81%;
-    left: 14%;
-    height: 8%;
+    width: 15%;
+    top: 84%;
+    left: 12%;
+    height: 7%;
     font-size: 1.1vw;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -574,6 +613,17 @@ p {
 
 @media only screen and (max-width: 1024px){ /* small laptop */
 
+    #contact-header{
+        left: 77%;
+        top: 20px;
+    }
+
+    #contact-us-button {
+        width: 170px;
+        height: 60px;
+        background-position-x: 2em;
+    }
+
     .logo img {
         height: 87px;
     }
@@ -619,13 +669,18 @@ p {
         top: 0px;
         height: 100px;
     }
+    .nav {
+        border-bottom: 1px solid black;
+    }
 }
 
 @media only screen and (max-width: 888px){  /*TABLET */
 
-
-   .nav {
-        border-bottom: 1px solid black;
+    #contact-us-button {
+        width: 120%;
+        height: 60px;
+        background-position-x: 2em;
+        font-size: 2.5vw;
     }
 
     .home-banner {
@@ -678,6 +733,11 @@ p {
 
 
 @media only screen and (max-width: 425px) { /*MOBILE*/
+
+
+    #contact-header {
+        display: none;
+    }
 
     #pink-flower {
         height: 60px;

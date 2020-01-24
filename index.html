@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
     <link
         href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Quicksand|Philosopher|Dancing+Script&display=swap"
         rel="stylesheet">
@@ -17,7 +18,6 @@
 
 <body>
 
-    <div id="offer-banner">GET £5 OFF YOUR FIRST TREATMENT ONLY IN JANUARY! x</div>
 
     <header class="nav">
         <!--Burger Menu-->
@@ -40,8 +40,8 @@
                 <a href="about.html">
                     <li>About</li>
                 </a>
-                <a href="book.html">
-                    <li>Book Appointment</li>
+                <a href="contact.html">
+                    <li>Contact Us</li>
                 </a>
                 <a href="under-construction.html">
                     <li class="d-flex justify-content-between">Facebook<i class=" fab fa-facebook-square fa-lg "></i>
@@ -62,7 +62,12 @@
         </div>
         <!--Burger Menu-->
 
-        <img id="lvl-png" src="imgs/lvl-png.png" alt="">
+        <div id="contact-header">
+            <a href="contact.html">
+                <button id="contact-us-button">Contact Us</button>
+            </a>
+        </div>
+        
 
         <div class="mobile-logo">
             <a href="index.html">
@@ -75,7 +80,6 @@
             </a>
         </div>
 
-        <img id="pink-flower" src="imgs/pink-flower.png" alt="">
 
         <div class="icons">
             <i class="fab fa-instagram fa-3x"></i>
@@ -85,18 +89,19 @@
         </div> 
     </header>
 
+
     <nav class="links sticky-top">
         <a id="current-page" href="index.html">Home</a>
         <a href="lvl.html">LVL Lashes</a>
         <a href="nails.html">Nails</a>
         <a href="gallery.html">Gallery</a>
         <a href="about.html">About</a>
-        <a href="book.html">Book Appointment</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
 
     <!--MOBILE-->
     <div class="banner-home-mobile">
-        <img src="imgs/banner-home-mobile2.jpg" alt="">
+        <img src="imgs/mobile-home.jpg" alt="">
         <a href="lvl.html">
             <button class="mobile-button">Find Out More</button>
         </a>
@@ -107,22 +112,13 @@
 
     <main class="main-container">
         <section class="home-banner">
-            <img src="imgs/banner-home2.jpg" alt="">
-            <h5 class="home-banner-isla">by Isla Fielding</h5>
+            <img src="imgs/home-banner-blossom.jpg" alt="">
             <a href="lvl.html">
                 <button class="home-banner-button">Find out more</button>
             </a>
         </section>
 
         <section class="services-section">
-            <div id="hide-mobile" class="bordered-box">
-                <img src="imgs/LVL-after.jpg" alt="">
-                <h1>LVL Lash Lift</h1>
-                <p>Length, Volume and Lift</p>
-                <a href="lvl.html">
-                    <div class="button">Take me there</div>
-                </a>
-            </div>
             <div class="bordered-box">
                 <img src="imgs/nail-extensions.jpg" alt="">
                 <h1>Nail Extensions</h1>
@@ -131,6 +127,15 @@
                     <div class="button">Go to page</div>
                 </a>
             </div>
+            <div id="hide-mobile" class="bordered-box">
+                <img src="imgs/lvl-services.jpg" alt="">
+                <h1>LVL Lash Lift</h1>
+                <p>Length, Volume and Lift</p>
+                <a href="lvl.html">
+                    <div class="button">Take me there</div>
+                </a>
+            </div>
+            
             <div class="bordered-box">
                 <img src="imgs/gels.jpg" alt="">
                 <h1>Nail Gels</h1>
