@@ -82,14 +82,31 @@ p {
     width: 300px;
 }
 
-.logo {
-    position: relative;
-    text-align: center;
+#logo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    margin-left: -160px;
+    top: 27px;
 }
 
-.logo img {
-    height: 125px;
-    width: auto;
+#logo h1 {
+    font-family: "Italiana";
+    font-size: 48px;
+}
+
+#logo h2 {
+    font-family: "Cinzel";
+    font-size: 24px;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
+
+#logo p {
+    font-family: "Cinzel";
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 .mobile-logo {
@@ -118,8 +135,10 @@ p {
 
 /* BURGER */
 #menuToggle {
-    display: none;
-    position: relative;
+    position: absolute;
+    margin: 0;
+    left: 2%;
+    top: 65px;
     padding-left: 20px;
     z-index: 1;
     -webkit-user-select: none;
@@ -128,9 +147,9 @@ p {
 
 #menuToggle span{
     display: block;
-    width: 33px;
+    width: 50px;
     height: 4px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     position: relative;
     background: rgb(68, 68, 68);
     border-radius: 3px;
@@ -139,8 +158,8 @@ p {
 
 #menuToggle input {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 50px;
+  height: 40px;
   position: absolute;
   top: -1px;
   left: 17px;
@@ -156,18 +175,17 @@ p {
 #show-nav {
     width: 350px;
     height: 532px;
-    margin: 36px 0 0 -45px;
+    margin: 54px 0 0 -51px;
     list-style-type: none;
     position: absolute;
-    border: 1px solid #ffb1b1;
-    background: rgb(255, 187, 191);
+    border-bottom: 3px solid #474747;
+    background: #FFD3D8;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     padding-left: 0;
     z-index: 99;
-    
 }
 
 #show-nav a li:hover {
@@ -217,10 +235,11 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 145px;
+    height: 161px;
     align-items: center;
-    background: #ffa7b8;
+    background: #FFD3D8;
     text-align: center;
+    border-bottom: 2px solid #808080;
 }
 
 .links {
@@ -229,23 +248,34 @@ p {
     align-content: center;
     height: 33px;
     width: 100%;
-    background-color: rgb(253, 204, 215);
-    border-bottom: 1px solid rgb(73, 73, 73);
+    background-color: #FFE0E0;
+}
+
+#nav-blossom {
+    position: absolute;
+    left: 40%;
+    margin-left: -179px;
+    top: 0;
+    opacity: .8;
+}
+
+#tablet-blossom {
+   position: absolute; 
+   right: 0;
 }
 
 .links a {
     color: #303030;
     font-size: 20px;
-    padding: 0 30px;
+    padding: 0 25px;
     letter-spacing: 1px;
     transition-property: color;
     transition-duration: .6s;
 }
 
 .links a:hover {
-    font-weight: bold;
-    color: white;
-    background-color: #FFA7B8;
+    color: #303030;
+    background-color: #FFD3D8;
 }
 
 #offer-banner {
@@ -306,11 +336,11 @@ p {
     display: flex;
     flex-direction: row;
     right: 2%;
-    top: 48px;
+    top: 55px;
     border-left: 2px solid white;
     padding-left: 10px;
     border-radius: 1px;
-    color: black;
+    color: rgb(58, 58, 58);
 }
 
 
@@ -319,33 +349,9 @@ p {
 }
 
 .fab {
-    color: black;
+    color: #474747;
     padding-right: 10px;
     padding-left: 10px;
-}
-
-.butterfly2 {
-    position: absolute;
-    left: 101%;
-    top: 18%;
-    z-index: 1;
-}
-
-.butterfly2 img {
-    height: 40px;
-    width: auto;
-    opacity: .8;
-}
-
-.logo h1 {
-    font-size: 65px;
-    color: rgb(63, 63, 63);
-    padding-bottom: 5px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    font-weight: bold;
-    letter-spacing: 0.7px;
-    z-index: 2;
 }
 
 .red {
@@ -520,7 +526,7 @@ p {
     display: flex;
     justify-content: space-around;
     height: 200px;
-    background-color: rgb(255, 208, 217);
+    background-color: #FFD3D8;
 }
 
 .footer-middle {
@@ -543,7 +549,7 @@ p {
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: rgb(255, 167, 184);
+    background-color: rgb(250, 192, 199);
 }
 
 .footer-box {
@@ -613,6 +619,40 @@ p {
 
 @media only screen and (max-width: 1024px){ /* small laptop */
 
+    #show-nav {
+        width: 350px;
+        height: 532px;
+        margin: 24px 0 0 -51px;
+    }
+
+    #nav-blossom {
+        display: none; 
+    }
+
+    #logo {
+        top: 5px;
+        margin-left: -126px;
+    }
+    
+    #logo h1 {
+        font-family: "Italiana";
+        font-size: 38px;
+    }
+    
+    #logo h2 {
+        font-family: "Cinzel";
+        font-size: 19px;
+        line-height: 10px;
+        letter-spacing: 2px;
+    }
+    
+    #logo p {
+        font-family: "Cinzel";
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    
+
     #contact-header{
         left: 77%;
         top: 20px;
@@ -624,17 +664,10 @@ p {
         background-position-x: 2em;
     }
 
-    .logo img {
+    #nav-blossom {
         height: 87px;
     }
-    
-    #logo-sub { 
-        font-size: 1.3vw;
-    }
 
-    #offer-banner {
-        display: none;
-    }
 
     #lvl-png {
         display: none;
@@ -643,10 +676,8 @@ p {
     .nav {
         justify-content: center;
         height: 100px;
-    }
+        border-bottom: 1px solid black;
 
-    .logo {
-        margin-left: 0;
     }
 
     #menuToggle {
@@ -661,27 +692,9 @@ p {
         display: none;
     }
 
-    .links {
-        display: none;
-    }
-
-    #pink-flower {
-        top: 0px;
-        height: 100px;
-    }
-    .nav {
-        border-bottom: 1px solid black;
-    }
 }
 
 @media only screen and (max-width: 888px){  /*TABLET */
-
-    #contact-us-button {
-        width: 120%;
-        height: 60px;
-        background-position-x: 2em;
-        font-size: 2.5vw;
-    }
 
     .home-banner {
         position: relative;
@@ -731,6 +744,12 @@ p {
     }
 }
 
+@media only screen and (max-width: 888px) {
+    #tablet-blossom {
+        display: none;
+    }
+}
+
 
 @media only screen and (max-width: 425px) { /*MOBILE*/
 
@@ -763,18 +782,6 @@ p {
     .home-banner {
         display: none;
     }
-
-    .logo h1 {
-        font-size: 9.5vw;
-    }
-
-    .butterfly2 {
-        left: 101%
-    }
-
-    .butterfly2 img {
-        height: 30px;
-    }
     
     .footer {
         display: none;
@@ -784,12 +791,8 @@ p {
         height: 60px;
     }
 
-    #menuToggle {
-        top: 18px;
-    }
-
     #show-nav {
-        margin: 12px 0 0 -29px;
+        margin: 10px 0 0 -29px;
         width: 80vw;;
         height: 532px;
     }
@@ -845,16 +848,42 @@ p {
         display: none;
     }
 
-    .nav {
-        background-color:  #FFA7B8;
-    }
-
-    .logo h1 {
+    #logo h1 {
         color: black;
+        font-size: 32px;
+        margin-bottom: 0;
     }
 
-    #menuToggle span {
-        background-color: black;
+    #logo {
+        margin-left: -106px;
+        top: 2px;
+    }
+
+    #logo h2 {
+        font-size: 12px;
+    }
+
+    #logo p {
+        display: none;
+    }
+
+    #menuToggle span{
+        display: block;
+        width: 40px;
+        height: 2px;
+        margin-bottom: 8px;
+        position: relative;
+        background: rgb(68, 68, 68);
+        border-radius: 3px;
+        z-index: 1;
+    }
+
+    #menuToggle {
+        display: block;
+        position: absolute;
+        margin: 0;
+        left: 0%;
+        top: 20px;
     }
 
     .footer-middle p {
